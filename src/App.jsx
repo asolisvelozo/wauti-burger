@@ -7,7 +7,7 @@ import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/wauti-burger">
       <Navbar />
       
       {}
