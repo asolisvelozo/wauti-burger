@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 function Register() {
   const navigate = useNavigate();
   
-  // Usamos un objeto para manejar todos los campos juntos
+
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -18,9 +18,9 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Datos del usuario:", formData); // Para que veas en consola (F12) que funciona
+    console.log("Datos del usuario:", formData); 
     alert("¡Cuenta creada con éxito! Ahora iniciá sesión.");
-    navigate("/login"); // Te manda al Login
+    navigate("/login"); 
   };
 
   return (
@@ -31,7 +31,7 @@ function Register() {
         
         <form onSubmit={handleSubmit}>
           
-          {/* Nombre */}
+
           <div className="mb-3">
             <label className="form-label">Nombre Completo</label>
             <input 
@@ -44,7 +44,7 @@ function Register() {
             />
           </div>
 
-          {/* Email */}
+    
           <div className="mb-3">
             <label className="form-label">Email</label>
             <input 
@@ -57,7 +57,7 @@ function Register() {
             />
           </div>
 
-          {/* Contraseña */}
+        
           <div className="mb-3">
             <label className="form-label">Contraseña</label>
             <input 

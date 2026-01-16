@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Link para ir a Registro, useNavigate para redireccionar
+import { Link, useNavigate } from 'react-router-dom'; 
 
 function Login() {
   const navigate = useNavigate();

@@ -1,6 +1,8 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'; 
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Productos from './pages/Productos'; 
+import SobreNosotros from './pages/SobreNosotros';
 import Login from './pages/login';
 import Register from './pages/Register';
 import ProductDetail from './pages/ProductDetail';
@@ -9,14 +11,19 @@ function App() {
   return (
     <HashRouter>
       <Navbar />
-      
       <Routes>
+       
         <Route path="/" element={<Home />} />
+        
+     
+        <Route path="/productos" element={<Productos />} />
+        
+        <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+        
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Register />} />
         <Route path="/producto/:id" element={<ProductDetail />} />
       </Routes>
-      
     </HashRouter>
   );
 }
